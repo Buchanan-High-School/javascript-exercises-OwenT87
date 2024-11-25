@@ -1,6 +1,6 @@
 function task1() {
-  let myArray = [];
-  // This will run when you click the button.
+  let myArray = ["Bob", "Billy", "Bill"];
+  let target = document.querySelector("#task-1-target")
   myArray.forEach((item) => {
     let el = document.createElement("p");
     el.innerText = item;
@@ -9,13 +9,29 @@ function task1() {
 }
 
 function task2A() {
-  // Write your code in here
+  let target = document.querySelector("#color-list")
+  let color = target.querySelectorAll("li")
+  console.log(color)
 }
 
 function task2B() {
-  // Writ your code in here
+  let nameli = document.querySelector("#name-list")
+  let names = nameli.querySelectorAll("li")
+let target = document.querySelector("#target")
+
+names.forEach(item  => {
+    let newEl = document.createElement("li");
+    newEl.innerText = "Hi " + item.innerText;
+    target.appendChild(newEl)
+
+}) 
 }
 
 function task3() {
-  // Write your code in here
+  let colors = document.querySelectorAll(".item")
+
+  colors.forEach (item =>
+    item.style.backgroundColor = "#" + item.innerText)
+  
+    
 }
