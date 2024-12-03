@@ -28,14 +28,22 @@ const teachers = [
 ]
 
 function task1() {
-    // Create your own object assigned to a variable.
-    // console.log your object when this function is run.
+   const Sport = {
+    "name": "Basketball",
+    "teams":30,
+    "roster": 18,
+    "points": "2 and 3"
+
+   }
+   console.log(Sport)
+   
+   
 }
 
 function task2() {
-    // Write some HTML to create a card display for a person.
-    // When you click the button, the data from the `person`
-    // object above should be filled in on the page.
+   console.log(person)
+   let target = document.querySelector("#person")
+   target.innerHTML(person)
 }
 
 function task3() {
