@@ -1,4 +1,4 @@
-// Write your Task 1 code inside this function!
+  // Write your Task 1 code inside this function!
 function task1() {
   console.log("Running task 1");
   // 1. Target the div
@@ -23,3 +23,4 @@ function task3() {
   console.log(target)
   target.appendChild(document.createElement('li')).textContent = "do it again"
 }
+
